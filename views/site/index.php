@@ -28,7 +28,7 @@ $this->title = 'Manutenção de Cargos e Funcionários';
 
                 <p>Produtos Mercado Livre.</p>
 
-                <p><a class="btn btn-outline-secondary" href="/mlivre/index">Consultar</a></p>
+                <p><a class="btn btn-outline-secondary" href="mlivre/index">Consultar</a></p>
             </div>
         </div>
 

@@ -1,9 +1,14 @@
 <?php
-/* @var $this yii\web\View */
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+use yii\helpers\Url;
 ?>
-<h1>mlivre/index</h1>
+<?php $form = ActiveForm::begin(['action' => 'procura', 'method' => 'get']); ?>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+    <?= $form->field($model, 'idProduto')->label('Código do Produto') ?>
+
+    <div class="form-group">
+        <?= Html::submitButton('Enviar', ['class' => 'btn btn-primary']) ?>
+    </div>
+
+<?php ActiveForm::end(); ?>
